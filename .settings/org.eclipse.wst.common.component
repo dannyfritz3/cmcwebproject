@@ -2,6 +2,9 @@
     <wb-module deploy-name="mzent_kbecker_secondweb">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="cmcproject.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cmcproject/cmcproject">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="mzent_kbecker_secondweb"/>
         <property name="java-output-path" value="/mzent_kbecker_secondweb/build/classes"/>
     </wb-module>

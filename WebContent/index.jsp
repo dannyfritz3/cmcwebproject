@@ -1,10 +1,11 @@
 <html>
-<head>
+	<head>
 
-<title>Login Form</title>
-</head>
-<body>
-<br>
+		<title>Login Form</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+	</head>
+	<body>
+		<br>
 <% 
 if(request.getParameter("Error") != null){
 	if(request.getParameter("Error").equals("-1")){
@@ -16,32 +17,32 @@ if(request.getParameter("Error") != null){
 	}
 }
 %>
-Login form:<br>
-<br>
-<form method="post" action="Login_action.jsp" name="Login"><br>
-<table style="text-align: left; width: 266px; height: 228px;"
-border="1" cellpadding="2" cellspacing="2">
-<tbody>
-<tr>
-<td style="vertical-align: top;">Username<br>
-</td>
-<td style="vertical-align: top;"><input name="Username"> </td>
-</tr>
-<tr>
-<td style="vertical-align: top;">Password<br>
-</td>
-<td style="vertical-align: top;"><input type="password" name="Password"> </td>
-</tr>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<form method="post" action="Login_action.jsp" name="Login">
+						<div class="form-group">
+							<label for="Username">Username</label>
+							<input name="Username" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="Password">Password</label>
+							<input type="password" name="Password" class="form-control">
+						</div>
+						<div class="btn-group btn-group-justified">
+							<div class="btn-group">
+								<input value="Log in" name="Log in" type="submit" class="btn btn-default">
+							</div>
+							<div class="btn-group">
+								<input value="Reset" name="Reset" type="reset" class="btn btn-danger">
+							</div>						
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-4"></div>
+			</div>
+		</div>
 
-<td style="vertical-align: top;"><input value="Log in"
-name="Log in" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<td style="vertical-align: top;"><input value="Reset"
-name="Reset" type="reset"></td>
-</tr>
-</tbody>
-</table>
-<br>
-</form>
-<br>
-</body>
+	</body>
 </html>

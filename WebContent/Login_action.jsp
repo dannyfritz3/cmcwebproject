@@ -14,7 +14,7 @@
 		return;	
 	}
 		session.setAttribute("loggedIn",uc);
-		response.sendRedirect("Menu.jsp");
+		response.sendRedirect("manage_users.jsp");
 
 		
 

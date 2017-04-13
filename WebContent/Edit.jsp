@@ -1,67 +1,58 @@
 <%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
-<%@include file="verifyLogin.jsp" %>
+
 <html>
 <head>
 
 <title>Edit User Form</title>
-</head>
-<body>
-<br>
-Edit User form:<br>
-<br>
+<%@include file="verifyLogin.jsp" %>
+
 <% AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");
-    out.println("Edit user : " + request.getParameter("Username"));
 	Account u = uc.viewUser(request.getParameter("Username"));
 %>
-<form method="post" action="Edit_action.jsp" name="editUser"><br>
-<table style="text-align: left; width: 266px; height: 228px;"
-border="1" >
-<tbody>
-<tr>
-<td style="vertical-align: top;">First Name<br>
-</td>
-<td style="vertical-align: top;"><input name="FirstName" value="<%= u.getFirstName()%>"><br>
-</td>
-</tr>
-<tr>
-<tr>
-<td style="vertical-align: top;">Last Name<br>
-</td>
-<td style="vertical-align: top;"><input name="LastName" value="<%= u.getLastName()%>"><br>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top;">Username<br>
-</td>
-<td style="vertical-align: top;"><input name="Username" value="<%= u.getUsername()%>" readonly> </td>
-</tr>
-<tr>
-<td style="vertical-align: top;">Password<br>
-</td>
-<td style="vertical-align: top;"><input name="Password" value="<%= u.getPassword()%>"> </td>
-</tr>
-<tr>
-<td style="vertical-align: top;">Type<br>
-</td>
-<td style="vertical-align: top;"><input name="Type" value="<%= u.getType()%>"> </td>
-</tr>
-<tr>
-<td style="vertical-align: top;">Status<br>
-</td>
-<td style="vertical-align: top;"><input name="Status" value="<%= u.getStatus()%>"> </td>
-</tr>
-
-<tr>
-<td style="vertical-align: top;"><input value="Edit"
-name="Edit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-<td style="vertical-align: top;"><input value="Reset"
-name="Reset" type="reset"></td>
-</tr>
-</tbody>
-</table>
-<br>
-</form>
-<br>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<form method="post" action="Add_action.jsp" name="addUser">
+				<div class="form-group">
+					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="LastName">Last Name:</label> <input name="LastName" value="<%= u.getLastName() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Username">Username:</label> <input name="Username" value="<%= u.getUsername() %>" disabled
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Password">Password:</label> <input name="Password" value="<%= u.getPassword() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Type">Type:</label> <input name="Type" value="<%= u.getType() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Status">Status:</label> <input name="Status" value="<%= u.getStatus() %>"
+						class="form-control">
+				</div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<input value="Add User" name="Add User" type="submit"
+							class="btn btn-success">
+					</div>
+					<div class="btn-group">
+						<input value="Reset" name="Reset" type="reset"
+							class="btn btn-danger">
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>
 </body>
 </html>
 

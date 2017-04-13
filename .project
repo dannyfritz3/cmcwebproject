@@ -3,6 +3,7 @@
 	<name>mzent_kbecker_secondweb2</name>
 	<comment></comment>
 	<projects>
+		<project>cmcproject</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

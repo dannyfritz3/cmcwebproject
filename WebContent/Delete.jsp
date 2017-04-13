@@ -5,5 +5,5 @@
 	AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");
 	Account u = uc.viewUser(request.getParameter("Username"));
 	uc.deleteUser(u);
-	response.sendRedirect("Menu.jsp");
+	response.sendRedirect("manage_users.jsp");
 %>
