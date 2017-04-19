@@ -70,9 +70,9 @@
 				<td style="vertical-align: top;"><%=uni.getQualityOfLifeScale()%>
 				</td>
 				<td style="vertical-align: top;">
-					<form method="post" action="manage_uni_action" name="Edit">
-						<input class="btn btn-primary" name="Edit" value="Edit" type="submit"> <input
-							name="Username" value="<%=uni.getName()%>" type="hidden">
+					<form method="post" action="manage_uni_action" name="view">
+						<input class="btn btn-primary" name="uni" value="view" type="submit"> <input
+							name="view" value="<%=uni.getName()%>" type="hidden">
 					</form>
 				</td>
 			</tr>
