@@ -3,7 +3,7 @@
 <html>
 <head>
 <title></title>
-<%@include file="verifyLogin.jsp"%>
+<%@include file="verifyLoginAdmin.jsp"%>
 <%
 	AdminInterface uc = (AdminInterface) session.getAttribute("loggedIn");
 %>

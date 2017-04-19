@@ -1,44 +1,44 @@
-<%@page language="java" import="java.util.*"%>
-
+<%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
 
 <html>
 <head>
-
-<title>Add User Form</title>
-<%@include file="verifyLoginAdmin.jsp"%>
-
+<title>Search</title>
+<%@include file="verifyLoginUser.jsp"%>
+<%
+	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
+%>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<form method="post" action="Add_action.jsp" name="addUser">
 				<div class="form-group">
-					<label for="FirstName">First Name:</label> <input name="FirstName"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="LastName">Last Name:</label> <input name="LastName"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Username">Username:</label> <input name="Username"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Password">Password:</label> <input name="Password"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Type">Type:</label> <input name="Type"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Status">Status:</label> <input name="Status"
+					<label for="SchoolName">by School Name</label> <input name="SchoolName"
 						class="form-control">
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
-						<input value="Add User" name="Add User" type="submit"
+						<input value="Search" name="Search" type="submit"
 							class="btn btn-success">
 					</div>
 					<div class="btn-group">
@@ -51,6 +51,6 @@
 		<div class="col-sm-4"></div>
 	</div>
 </div>
+
 </body>
 </html>
-

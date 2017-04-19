@@ -1,5 +1,5 @@
 <%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
-<%@include file="verifyLogin.jsp" %>
+<%@include file="verifyLoginAdmin.jsp" %>
 <%
     out.println("delete user : " + request.getParameter("Username"));
 	AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");

@@ -4,7 +4,7 @@
 <head>
 
 <title>Edit User Form</title>
-<%@include file="verifyLogin.jsp" %>
+<%@include file="verifyLoginAdmin.jsp" %>
 
 <% AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");
 	Account u = uc.viewUser(request.getParameter("Username"));
