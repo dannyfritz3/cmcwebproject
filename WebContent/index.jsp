@@ -21,7 +21,7 @@ if(request.getParameter("Error") != null){
 			<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">
-				<form method="post" action="Login_action.jsp" name="Login">
+				<form method="post" action="login_action.jsp" name="Login">
 						<div class="form-group">
 							<label for="Username">Username</label>
 							<input name="Username" class="form-control">
