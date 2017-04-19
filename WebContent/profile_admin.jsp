@@ -1,4 +1,4 @@
-<%@page lang="java" import="interfaces.*, baseclasses.*,java.util.*"%>
+<%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
 <html>
 <head>
 
@@ -6,13 +6,13 @@
 <%@include file="verifyLoginAdmin.jsp" %>
 
 <% AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");
-	Account u = uc.viewUser(request.getParameter("Username"));
+	Account u = uc.getAccount();
 %>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
-			<form method="post" action="Edit_Action.jsp" name="editAmdin">
+			<form method="post" action="edit_action.jsp" name="editAmdin">
 				<div class="form-group">
 					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
 						class="form-control">
@@ -35,7 +35,7 @@
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
-						<input value="Add User" name="Add User" type="submit"
+						<input value="Edit Admin" name="Edit Admin" type="submit"
 							class="btn btn-success">
 					</div>
 					<div class="btn-group">

@@ -22,6 +22,7 @@ if(type == null || type != 1){
       <li><a href="manage_schools.jsp">Manage Schools</a></li>
     </ul>
      <ul class="nav navbar-nav navbar-right">
+      <li><a href="profile_admin.jsp"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
       <li><a href="logout_action.jsp"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
     </ul>
   </div>
