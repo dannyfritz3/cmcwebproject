@@ -1,43 +1,77 @@
 <%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
 <html>
 <head>
-<%@include file="verifyLoginUser.jsp" %>
+<%@include file="verifyLoginAdmin.jsp" %>
 <title>Manage Schools</title>
 
-<% UserInterface uc = (UserInterface)session.getAttribute("loggedIn");
+<% AdminInterface uc = (AdminInterface)session.getAttribute("loggedIn");
 	Account u = uc.getAccount();
 %>
 
 <div class="container">
-					<a class="btn btn-success btn-block" href="Add.jsp"> <span class="glyphicon glyphicon-plus"></span> Add User</a>
+					<a class="btn btn-success btn-block" href="add_uni_action.jsp"> <span class="glyphicon glyphicon-plus"></span> Add New University</a>
 	<table class="table table-bordered table-striped">
 		<tbody>
 
 			<tr>
-				<td style="vertical-align: top;">Edit</td>
-				<td style="vertical-align: top; text-align: center;">Full name
+				<td style="vertical-align: top;">School</td>
+				<td style="vertical-align: top; text-align: center;">State
 				</td>
-				<td style="vertical-align: top; text-align: center;">Username</td>
-				<td style="vertical-align: top; text-align: center;">Password</td>
-				<td style="vertical-align: top; text-align: center;">Type</td>
-				<td style="vertical-align: top; text-align: center;">Status</td>
-				<td style="vertical-align: top;">Delete</td>
+				<td style="vertical-align: top; text-align: center;">Location</td>
+				<td style="vertical-align: top; text-align: center;">Control</td>
+				<td style="vertical-align: top; text-align: center;"># of Students</td>
+				<td style="vertical-align: top; text-align: center;">% females</td>
+				<td style="vertical-align: top; text-align: center;">SAT Verbal</td>
+				<td style="vertical-align: top; text-align: center;">SAT Math</td>
+				<td style="vertical-align: top; text-align: center;">Expenses</td>
+				<td style="vertical-align: top; text-align: center;">% with Financial Aid</td>
+				<td style="vertical-align: top; text-align: center;"># of Applicants</td>
+				<td style="vertical-align: top; text-align: center;">% Admitted</td>
+				<td style="vertical-align: top; text-align: center;">% Enrolled</td>
+				<td style="vertical-align: top; text-align: center;">Academic Scale (1-5)</td>
+				<td style="vertical-align: top; text-align: center;">Social Scale (1-5)</td>
+				<td style="vertical-align: top; text-align: center;">Quality of Life Scale (1-5)</td>
+				<td style="vertical-align: top;"></td>
 			</tr>
-			<% ArrayList<University> savedSchools = uc.viewSavedSchools();
+			<% ArrayList<University> savedSchools = uc.viewAllSchools();
 				for(University uni : savedSchools) {
 			%>
 			<tr>
-				<td style="vertical-align: top;">
-					<form method="post" action="remove_action.jsp" name="Remove">
-						<input class="btn btn-danger" name="Remove" value="Remove" type="submit"> <input
-							name="Username" value="<%=uni.getName()%>" type="hidden">
-					</form>
-				</td>
 				<td style="vertical-align: top;"><%=uni.getName()%>
 				</td>
+				<td style="vertical-align: top;"><%=uni.getState()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getLocation()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getControl()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getNumberOfStudents()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getPercentFemale()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getSATVerbal()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getSATMath()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getExpenses()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getPercentFinancialAid()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getNumberOfApplicants()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getPercentAdmitted()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getPercentEnrolled()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getAcademicScale()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getSocialScale()%>
+				</td>
+				<td style="vertical-align: top;"><%=uni.getQualityOfLifeScale()%>
+				</td>
 				<td style="vertical-align: top;">
-					<form method="post" action="view_school.jsp" name="View">
-						<input class="btn btn-primary" name="View" value="View" type="submit"> <input
+					<form method="post" action="manage_uni_action" name="Edit">
+						<input class="btn btn-primary" name="Edit" value="Edit" type="submit"> <input
 							name="Username" value="<%=uni.getName()%>" type="hidden">
 					</form>
 				</td>
@@ -45,3 +79,8 @@
 			<%
 				}
 			%>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
