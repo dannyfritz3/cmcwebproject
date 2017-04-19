@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="col-sm-2"></div>
 		<div class="col-sm-8">
-			<form method="post" action="Add_action.jsp" name="addUser" class="form-horizontal">
+			<form method="post" action="search_action.jsp" name="search_action" class="form-horizontal">
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="SchoolName">School Name: </label>
 					<div class="col-sm-9"> 
