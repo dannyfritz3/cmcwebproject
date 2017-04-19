@@ -18,8 +18,8 @@ if(type == null || type != 1){
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Manage Users</a></li>
-      <li><a href="#">Manage Schools</a></li>
+      <li><a href="manage_users.jsp">Manage Users</a></li>
+      <li><a href="manage_schools.jsp">Manage Schools</a></li>
     </ul>
      <ul class="nav navbar-nav navbar-right">
       <li><a href="logout_action.jsp"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
