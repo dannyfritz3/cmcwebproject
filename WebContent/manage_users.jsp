@@ -9,7 +9,7 @@
 %>
 
 <div class="container">
-					<a class="btn btn-success" href="Add.jsp"> <span class="glyphicon glyphicon-plus"></span> Add User</a>
+					<a class="btn btn-success btn-block" href="Add.jsp"> <span class="glyphicon glyphicon-plus"></span> Add User</a>
 	<table class="table table-bordered table-striped">
 		<tbody>
 
