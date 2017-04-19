@@ -13,9 +13,23 @@
 		<div class="col-sm-8">
 			<form method="post" action="Add_action.jsp" name="addUser" class="form-horizontal">
 				<div class="form-group">
-					<label class="control-label col-sm-3"  for="SchoolName">by School Name</label> <div class="col-sm-9"> <input name="SchoolName"
-						class="form-control"> </div>
+					<label class="control-label col-sm-3"  for="SchoolName">School Name: </label>
+					<div class="col-sm-9"> 
+						<input name="SchoolName" class="form-control">
+					</div>
 				</div>
+				<div class="form-group">
+					<label class="control-label col-sm-3"  for="NumStudents">Number of Students: </label>
+					<label class="control-label col-sm-2"  for="NumStudents"> between </label>
+					<div class="col-sm-3"> 
+					<input name="NumStudents" class="form-control">
+					</div>
+					<label class="control-label col-sm-1"  for="NumStudents2"> and </label>
+					<div class="col-sm-3"> 
+					<input name="NumStudents2" class="form-control">
+					</div>
+				</div>
+				
 				<div class="form-group">
 					<label for="SchoolName">by State</label> <input name="State"
 						class="form-control">
