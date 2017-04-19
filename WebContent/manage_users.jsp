@@ -9,7 +9,7 @@
 %>
 
 <div class="container">
-					<a class="btn btn-success btn-block" href="Add.jsp"> <span class="glyphicon glyphicon-plus"></span> Add User</a>
+					<a class="btn btn-success btn-block" href="add.jsp"> <span class="glyphicon glyphicon-plus"></span> Add User</a>
 	<table class="table table-bordered table-striped">
 		<tbody>
 
@@ -28,7 +28,7 @@
 			%>
 			<tr>
 				<td style="vertical-align: top;">
-					<form method="post" action="Edit.jsp" name="Edit">
+					<form method="post" action="edit.jsp" name="Edit">
 						<input class="btn btn-primary" name="Edit" value="Edit" type="submit"> <input
 							name="Username" value="<%=u.getUsername()%>" type="hidden">
 					</form>
@@ -40,7 +40,7 @@
 				<td style="vertical-align: top;"><%=u.getType()%></td>
 				<td style="vertical-align: top;"><%=u.getStatus()%></td>
 				<td style="vertical-align: top;">
-					<form method="post" action="Delete.jsp" name="Delete">
+					<form method="post" action="delete.jsp" name="Delete">
 						<input class="btn btn-danger" name="Delete" value="Delete" type="submit"> <input
 							name="Username" value="<%=u.getUsername()%>" type="hidden">
 					</form>

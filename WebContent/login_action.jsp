@@ -20,7 +20,7 @@
 		uc2.login(request.getParameter("Username"),request.getParameter("Password"));
 		session.setAttribute("loggedIn",uc2);
 		session.setAttribute("type",2);
-		response.sendRedirect("Search.jsp");
+		response.sendRedirect("search.jsp");
 	} else {
 		response.sendRedirect("index.jsp?Error=2");
 		return;	
