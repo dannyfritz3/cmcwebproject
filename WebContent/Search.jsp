@@ -9,23 +9,23 @@
 %>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-4"></div>
-		<div class="col-sm-4">
-			<form method="post" action="Add_action.jsp" name="addUser">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<form method="post" action="Add_action.jsp" name="addUser" class="form-horizontal">
 				<div class="form-group">
-					<label for="SchoolName">by School Name</label> <input name="SchoolName"
+					<label class="control-label col-sm-3"  for="SchoolName">by School Name</label> <div class="col-sm-9"> <input name="SchoolName"
+						class="form-control"> </div>
+				</div>
+				<div class="form-group">
+					<label for="SchoolName">by State</label> <input name="State"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="SchoolName">by School Name</label> <input name="SchoolName"
+					<label for="SchoolName">by Location</label> <input name="Location"
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="SchoolName">by School Name</label> <input name="SchoolName"
-						class="form-control">
-				</div>
-				<div class="form-group">
-					<label for="SchoolName">by School Name</label> <input name="SchoolName"
+					<label for="SchoolName">by Control</label> <input name="Conrtol"
 						class="form-control">
 				</div>
 				<div class="form-group">
@@ -48,7 +48,7 @@
 				</div>
 			</form>
 		</div>
-		<div class="col-sm-4"></div>
+		<div class="col-sm-2"></div>
 	</div>
 </div>
 
