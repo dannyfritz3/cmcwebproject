@@ -1,4 +1,4 @@
-<%@page lang="java" import="interfaces.*, baseclasses.*,java.util.*"%>
+<%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
 <html>
 <head>
 
@@ -35,7 +35,7 @@
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
-						<input value="Add User" name="Add User" type="submit"
+						<input value="Edit User" name="Edit User" type="submit"
 							class="btn btn-success">
 					</div>
 					<div class="btn-group">
