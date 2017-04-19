@@ -161,7 +161,7 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="control-label col-sm-3"  for="QualityOfLifeScale">Quality Of Life Scale (1- 5): </label>
+					<label class="control-label col-sm-3"  for="QualityOfLifeScale">Quality Of Life Scale <br>(1- 5): </label>
 					<label class="control-label col-sm-2"  for="QualityOfLifeScale"> between </label>
 					<div class="col-sm-3"> 
 					<input name="QualityOfLifeScale" class="form-control">
