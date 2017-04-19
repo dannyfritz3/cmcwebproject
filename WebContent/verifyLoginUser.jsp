@@ -18,7 +18,7 @@ if(type == null || type != 2){
       <a class="navbar-brand" href="#">Choose My College</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="index.jsp">Home</a></li>
+      <li><a href="#">Home</a></li>
       <li><a href="search.jsp">Search</a></li>
       <li><a href="saved_schools.jsp">My Saved Schools</a></li>
     </ul>
