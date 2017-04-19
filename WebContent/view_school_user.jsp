@@ -6,7 +6,7 @@
 <%@include file="verifyLoginUser.jsp"%>
 <%
 	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
-	University university= uc.getSchool(request.getParameter("university"));
+	University university = uc.viewUniversity(request.getParameter("uni"));
 	
 %>
 
@@ -15,11 +15,11 @@
 		<tbody>
 			<tr>
 				<td style="vertical-align: top;">School</td>
-				<td style="vertical-align: top;"><%university.getName(); %></td>
+				<td style="vertical-align: top;"><%=university.getName()%></td>
 			</tr>
 			<tr>
 				<td style="vertical-align: top;">State</td>
-				<td style="vertical-align: top;">university.getLocation();</td>
+				<td style="vertical-align: top;"><%=university.getLocation()%></td>
 			</tr>
 			<tr>
 				<td style="vertical-align: top;">Location</td>

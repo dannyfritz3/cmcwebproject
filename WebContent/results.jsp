@@ -26,7 +26,7 @@
 				</td>
 				<td style="vertical-align: top;"><%=u.getName()%></td>
 				<td style="vertical-align: top;">
-					<form method="post" action="view_school.jsp" name="View">
+					<form method="post" action="view_school_user.jsp" name="View">
 						<input class="btn btn-primary" name="View" value="View" type="submit"> <input
 							name="Username" value="<%=u.getName()%>" type="hidden">
 					</form>

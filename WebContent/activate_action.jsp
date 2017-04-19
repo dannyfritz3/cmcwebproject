@@ -1,8 +1,6 @@
 <%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
-<%@include file="verifyLoginAdmin.jsp"%>
-<%
-	AdminInterface uc = (AdminInterface) session.getAttribute("loggedIn");
+<% AdminInterface uc = (AdminInterface) session.getAttribute("loggedIn");
 	Account a = uc.viewUser(request.getParameter("Username"));
-	uc.deactivate(a);
+	uc.activate(a);
 	response.sendRedirect("manage_users.jsp");
 %>

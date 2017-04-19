@@ -21,6 +21,7 @@
 				<td style="vertical-align: top; text-align: center;">Password</td>
 				<td style="vertical-align: top; text-align: center;">Type</td>
 				<td style="vertical-align: top; text-align: center;">Status</td>
+				<td style="vertical-align: top; text-align: center;">Change Status</td>
 				<td style="vertical-align: top;">Delete</td>
 			</tr>
 			<%
@@ -39,6 +40,23 @@
 				<td style="vertical-align: top;"><%=u.getPassword()%></td>
 				<td style="vertical-align: top;"><%=u.getType()%></td>
 				<td style="vertical-align: top;"><%=u.getStatus()%></td>
+				<%
+					if(u.getStatus() == 'N') {
+						%>
+						<td style="vertical-align: top;">
+					<form method="post" action="activate_action.jsp" name="Activate">
+						<input size=10 class="btn btn-info" name="Activate" value="Activate" type="submit"> <input
+							name="Username" value="<%=u.getUsername()%>" type="hidden">
+					</form>
+				</td>
+					<%}else{%>
+						<td style="vertical-align: top;">
+					<form method="post" action="deactivate_action.jsp" name="Deactivate">
+						<input class="btn btn-danger" name="Deactivate" value="Deactivate" type="submit"> <input
+							name="Username" value="<%=u.getUsername()%>" type="hidden">
+					</form>
+				</td>
+				<% } %>
 				<td style="vertical-align: top;">
 					<form method="post" action="delete.jsp" name="Delete">
 						<input class="btn btn-danger" name="Delete" value="Delete" type="submit"> <input

@@ -8,8 +8,8 @@
 	Account u = uc.getAccount();
 %>
 
-<div class="container">
-					<a class="btn btn-success btn-block" href="add_uni_action.jsp"> <span class="glyphicon glyphicon-plus"></span> Add New University</a>
+<div>
+					<a class="btn btn-success btn-block" href="add_action.jsp"> <span class="glyphicon glyphicon-plus"></span> Add New University</a>
 	<table class="table table-bordered table-striped">
 		<tbody>
 
@@ -70,9 +70,9 @@
 				<td style="vertical-align: top;"><%=uni.getQualityOfLifeScale()%>
 				</td>
 				<td style="vertical-align: top;">
-					<form method="post" action="manage_uni_action" name="view">
+					<form method="post" action="view_school_admin.jsp" name="view">
 						<input class="btn btn-primary" name="uni" value="view" type="submit"> <input
-							name="view" value="<%=uni.getName()%>" type="hidden">
+							name="uni" value="<%=uni.getName()%>" type="hidden">
 					</form>
 				</td>
 			</tr>
