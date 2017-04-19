@@ -17,7 +17,7 @@ if(request.getParameter("Error") != null){
 	}
 }
 %>
-		<div class="container">
+		<div class="container well">
 			<div class="row">
 				<div class="col-sm-4"></div>
 				<div class="col-sm-4">

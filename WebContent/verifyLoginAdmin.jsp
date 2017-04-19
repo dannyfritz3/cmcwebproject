@@ -11,3 +11,18 @@ if(type == null || type != 1){
 
 %>
 <body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Choose My College</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Manage Users</a></li>
+      <li><a href="#">Manage Schools</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="logout_action.jsp"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
+    </ul>
+  </div>
+</nav>
