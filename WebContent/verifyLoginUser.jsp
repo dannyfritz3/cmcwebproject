@@ -19,11 +19,11 @@ if(type == null || type != 2){
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Search</a></li>
-      <li><a href="#">My Saved Schools</a></li>
+      <li><a href="search.jsp">Search</a></li>
+      <li><a href="saved_schools.jsp">My Saved Schools</a></li>
     </ul>
      <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
+      <li><a href="profile_user.jsp"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
       <li><a href="logout_action.jsp"><span class="glyphicon glyphicon-log-in"></span> Log-Out</a></li>
     </ul>
   </div>

@@ -6,7 +6,7 @@
 <%@include file="verifyLoginUser.jsp" %>
 
 <% UserInterface uc = (UserInterface)session.getAttribute("loggedIn");
-	Account u = uc.viewUser();
+	Account u = uc.getAccount();
 %>
 <div class="container">
 	<div class="row">
