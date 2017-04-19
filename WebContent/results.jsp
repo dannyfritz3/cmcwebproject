@@ -12,7 +12,7 @@
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
-				<td style="vertical-align: top;">School</td>
+				<th colspan="3" class="text-center" style="vertical-align: top;">School</th>
 			</tr>
 			<%
 				for (University u : uc.viewSearches()) {
@@ -20,7 +20,7 @@
 			<tr>
 				<td style="vertical-align: top;">
 					<form method="post" action="save_action.jsp" name="Save">
-						<input class="btn btn-primary" name="Save" value="Save" type="submit"> <input
+						<input class="btn btn-success" name="Save" value="Save" type="submit"> <input
 							name="Username" value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>

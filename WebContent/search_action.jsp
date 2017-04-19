@@ -3,7 +3,7 @@
 <%
 	UserInterface ui = (UserInterface)session.getAttribute("loggedIn");
 	ArrayList<String> emphasis = new ArrayList<String>();
-	/* if(request.getParameter("Emp1") != null && !request.getParameter("Emp1").equals("")){
+	if(request.getParameter("Emp1") != null && !request.getParameter("Emp1").equals("")){
 		emphasis.add(request.getParameter("Emp1"));
 	}
 	if(request.getParameter("Emp2") != null && !request.getParameter("Emp2").equals("")){
@@ -17,8 +17,7 @@
 	}
 	if(request.getParameter("Emp5") != null && !request.getParameter("Emp5").equals("")){
 		emphasis.add(request.getParameter("Emp5"));
-	} */
-	//ui.searchSchools(Double.parseDouble(request.getParameter("SATMath")), Double.parseDouble(request.getParameter("SATMath2")), Double.parseDouble(request.getParameter("Expenses")), Double.parseDouble(request.getParameter("Expenses2")), Double.parseDouble(request.getParameter("PercentFinancialAid")), Double.parseDouble(request.getParameter("PercentFinancialAid2")), Integer.parseInt(request.getParameter("NumberOfApplicants")), Integer.parseInt(request.getParameter("NumberOfApplicants2")), Double.parseDouble(request.getParameter("PercentAdmitted")), Double.parseDouble(request.getParameter("PercentAdmitted2")), Double.parseDouble(request.getParameter("PercentEnrolled")), Double.parseDouble(request.getParameter("PercentEnrolled2")),  Integer.parseInt(request.getParameter("AcademicScale")),  Integer.parseInt(request.getParameter("AcademicScale2")),  Integer.parseInt(request.getParameter("SocialScale")), Integer.parseInt(request.getParameter("SocialScale2")), Integer.parseInt(request.getParameter("QualityOfLifeScale")), Integer.parseInt(request.getParameter("QualityOfLifeScale2")), emphasis);
+	}
 	String name = null;
 	if(!request.getParameter("SchoolName").equals("")){
 		name = request.getParameter("SchoolName").toUpperCase();
@@ -68,21 +67,69 @@
 		SATMath2 = Double.parseDouble(request.getParameter("SATMath2"));
 	}
 	double expenses = -1;
+	if(!request.getParameter("Expenses").equals("")){
+		expenses = Double.parseDouble(request.getParameter("Expenses"));
+	}
 	double expenses2 = -1;
+	if(!request.getParameter("Expenses2").equals("")){
+		expenses2 = Double.parseDouble(request.getParameter("Expenses2"));
+	}
 	double percentFinancialAid = -1;
+	if(!request.getParameter("PercentFinancialAid").equals("")){
+		percentFinancialAid = Double.parseDouble(request.getParameter("PercentFinancialAid"));
+	}
 	double percentFinancialAid2 = -1;
+	if(!request.getParameter("PercentFinancialAid2").equals("")){
+		percentFinancialAid2 = Double.parseDouble(request.getParameter("PercentFinancialAid2"));
+	}
 	int numberOfApplicants = -1;
+	if(!request.getParameter("NumberOfApplicants").equals("")){
+		numberOfApplicants = Integer.parseInt(request.getParameter("NumberOfApplicants"));
+	}
 	int numberOfApplicants2 = -1;
+	if(!request.getParameter("NumberOfApplicants2").equals("")){
+		numberOfApplicants2 = Integer.parseInt(request.getParameter("NumberOfApplicants2"));
+	}
 	double percentAdmitted = -1;
+	if(!request.getParameter("PercentAdmitted").equals("")){
+		percentAdmitted = Double.parseDouble(request.getParameter("PercentAdmitted"));
+	}
 	double percentAdmitted2 = -1;
+	if(!request.getParameter("PercentAdmitted2").equals("")){
+		percentAdmitted2 = Double.parseDouble(request.getParameter("PercentAdmitted2"));
+	}
 	double percentEnrolled = -1;
+	if(!request.getParameter("PercentEnrolled").equals("")){
+		percentEnrolled = Double.parseDouble(request.getParameter("PercentEnrolled"));
+	}
 	double percentEnrolled2 = -1;
+	if(!request.getParameter("PercentEnrolled2").equals("")){
+		percentEnrolled2 = Double.parseDouble(request.getParameter("PercentEnrolled2"));
+	}
 	int academicScale = -1;
+	if(!request.getParameter("AcademicScale").equals("")){
+		academicScale = Integer.parseInt(request.getParameter("AcademicScale"));
+	}
 	int academicScale2 = -1;
+	if(!request.getParameter("AcademicScale2").equals("")){
+		academicScale = Integer.parseInt(request.getParameter("AcademicScale2"));
+	}
 	int socialScale = -1;
+	if(!request.getParameter("SocialScale").equals("")){
+		socialScale = Integer.parseInt(request.getParameter("SocialScale"));
+	}
 	int socialScale2 = -1;
+	if(!request.getParameter("SocialScale2").equals("")){
+		socialScale2 = Integer.parseInt(request.getParameter("SocialScale2"));
+	}
 	int qualityOfLifeScale = -1;
+	if(!request.getParameter("QualityOfLifeScale").equals("")){
+		qualityOfLifeScale = Integer.parseInt(request.getParameter("QualityOfLifeScale"));
+	}
 	int qualityOfLifeScale2 = -1;
+	if(!request.getParameter("QualityOfLifeScale2").equals("")){
+		qualityOfLifeScale2 = Integer.parseInt(request.getParameter("QualityOfLifeScale2"));
+	}
 	ui.searchSchools(name, state, location, control, numberOfStudents, numberOfStudents2, percentFemale, percentFemale2, SATVerbal, SATVerbal2, SATMath, SATMath2, expenses, expenses2, percentFinancialAid, percentFinancialAid2, numberOfApplicants, numberOfApplicants2, percentAdmitted, percentAdmitted2, percentEnrolled, percentEnrolled2, academicScale, academicScale2, socialScale, socialScale2, qualityOfLifeScale, qualityOfLifeScale2, emphasis);
 	response.sendRedirect("results.jsp");
 %>
