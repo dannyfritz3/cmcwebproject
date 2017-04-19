@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
-			<form method="post" action="Edit_Action.jsp" name="editAmdin">
+			<form method="post" action="edit_action.jsp" name="editAmdin">
 				<div class="form-group">
 					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
 						class="form-control">
