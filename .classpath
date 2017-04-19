@@ -16,6 +16,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/cmcproject"/>
-	<classpathentry kind="lib" path="/net/people/classes/Java/csci230databaselibrary.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
