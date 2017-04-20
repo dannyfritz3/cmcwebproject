@@ -15,8 +15,14 @@
 	
 
 %>
-
+<div>
+					
+					</div>
 <div class="container">
+<form method="post" action="save_action.jsp" name="Save">
+						<input class="btn btn-success btn-block" name="Save" value="Save" type="submit"> <input
+							name="University" value="<%=university.getName()%>" type="hidden">
+					</form>
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
