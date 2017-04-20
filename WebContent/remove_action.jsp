@@ -2,6 +2,7 @@
 <%@include file="verifyLoginUser.jsp"%>
 <%
 	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
-	uc.removeSchool((University) session.getAttribute("university"));
+	University uni = uc.viewUniversity(request.getParameter("University"));
+	uc.removeSchool(uni);
 	response.sendRedirect("saved_schools.jsp");
 %>

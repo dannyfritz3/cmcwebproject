@@ -9,7 +9,7 @@
 %>
 
 <div class="container">
-					
+
 	<table class="table table-bordered table-striped">
 		<tbody>
 
@@ -19,20 +19,23 @@
 				<td style="vertical-align: top; text-align: center;">View</td>
 			</tr>
 			<%
-				for (University u : uc.viewSavedSchools()) {
+				ArrayList<University> savedSchools = uc.viewSavedSchools();
+				for (University u : savedSchools) {
 			%>
 			<tr>
 				<td style="vertical-align: top;">
 					<form method="post" action="remove_action.jsp" name="remove">
-						<input class="btn btn-primary" name="remove" value="remove" type="submit"> <input
-							name="University" value="<%=u%>" type="hidden">
+						<input class="btn btn-primary" name="remove" value="remove"
+							type="submit"> <input name="University"
+							value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>
 				<td style="vertical-align: top;"><%=u.getName()%></td>
 				<td style="vertical-align: top;">
-					<form method="post" action="view_school.jsp" name="view">
-						<input class="btn btn-danger" name="view" value="view" type="submit"> <input
-							name="University" value="<%=u%>" type="hidden">
+					<form method="post" action="view_school_user.jsp" name="view">
+						<input class="btn btn-danger" name="view" value="view"
+							type="submit"> <input name="University"
+							value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>
 			</tr>
