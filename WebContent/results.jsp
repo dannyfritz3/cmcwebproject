@@ -21,7 +21,7 @@
 				<td style="vertical-align: top;">
 					<form method="post" action="save_action.jsp" name="Save">
 						<input class="btn btn-success" name="Save" value="Save" type="submit"> <input
-							name="Username" value="<%=u.getName()%>" type="hidden">
+							name="University" value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>
 				<td style="vertical-align: top;"><%=u.getName()%></td>
