@@ -22,7 +22,7 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Username">Username:</label> <input name="Username" value="<%= u.getUsername() %>" disabled
+					<label for="Username">Username:</label> <input name="Username" value="<%= u.getUsername() %>" readonly
 						class="form-control">
 				</div>
 				<div class="form-group">
@@ -30,7 +30,7 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Type">Type:</label> <input name="Type" value="<%= u.getType() %>" disabled
+					<label for="Type">Type:</label> <input name="Type" value="<%= u.getType() %>" readonly
 						class="form-control">
 				</div>
 				<div class="btn-group btn-group-justified">
