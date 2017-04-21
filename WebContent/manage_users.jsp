@@ -58,7 +58,7 @@
 				</td>
 				<% } %>
 				<td style="vertical-align: top;">
-					<form method="post" action="delete.jsp" name="Delete">
+					<form method="post" action="delete_user_action.jsp" name="Delete">
 						<input class="btn btn-danger" name="Delete" value="Delete" type="submit"> <input
 							name="Username" value="<%=u.getUsername()%>" type="hidden">
 					</form>

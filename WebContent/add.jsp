@@ -11,7 +11,7 @@
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
-			<form method="post" action="Add_action.jsp" name="addUser">
+			<form method="post" action="add_action.jsp" name="addUser">
 				<div class="form-group">
 					<label for="FirstName">First Name:</label> <input name="FirstName"
 						class="form-control">

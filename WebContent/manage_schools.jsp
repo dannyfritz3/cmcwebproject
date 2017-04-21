@@ -71,8 +71,8 @@
 				</td>
 				<td style="vertical-align: top;">
 					<form method="post" action="view_school_admin.jsp" name="view">
-						<input class="btn btn-primary" name="uni" value="view" type="submit"> <input
-							name="uni" value="<%=uni.getName()%>" type="hidden">
+						<input class="btn btn-primary" name="view" value="view" type="submit">
+						 <input	name="University" value="<%=uni.getName()%>" type="hidden">
 					</form>
 				</td>
 			</tr>

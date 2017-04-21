@@ -13,7 +13,7 @@
 	<div class="row">
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
-			<form method="post" action="Add_action.jsp" name="addUser">
+			<form method="post" action="edit_action.jsp" name="addUser">
 				<div class="form-group">
 					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
 						class="form-control">
