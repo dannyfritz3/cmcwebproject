@@ -15,7 +15,7 @@
 				<th colspan="3" class="text-center" style="vertical-align: top;">School</th>
 			</tr>
 			<%
-				for (University u : uc.viewSearches()) {
+				for (University u : uc.viewSearch()) {
 			%>
 			<tr>
 				<td style="vertical-align: top;">
