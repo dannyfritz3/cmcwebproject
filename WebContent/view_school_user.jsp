@@ -14,8 +14,13 @@
 	//uc.saveSchool(uni);
 	//response.sendRedirect("saved_schools.jsp");
 %>
+<<<<<<< HEAD
 
+=======
+<div></div>
+>>>>>>> branch 'master' of https://github.com/nullpm/cmcwebproject.git
 <div class="container">
+<<<<<<< HEAD
 	<%
 		if (!uc.viewSavedSchools().contains(university)) {
 	%>
@@ -38,6 +43,33 @@
 	<%
 		}
 	%>
+=======
+	<%//<form method="post" action="save_action.jsp" name="Save">
+		//<input class="btn btn-success btn-block" name="Save" value="Save"
+			//type="submit"> <input name="University"
+			//value="<%=university.getName()" type="hidden">
+	//</form>%>
+
+	<%
+					if(!uc.viewSavedSchools().contains(university)) {
+						%>
+	<td style="vertical-align: top;">
+		<form method="post" action="save_action.jsp" name="Save">
+			<input size=10 class="btn btn-info" name="Save" value="Save"
+				type="submit"> <input name="University"
+				value="<%=university.getName()%>" type="hidden">
+		</form>
+	</td>
+	<%}else{%>
+	<td style="vertical-align: top;">
+		<form method="post" action="remove_action.jsp" name="Remove">
+			<input class="btn btn-danger" name="Remove" value="Remove"
+				type="submit"> <input name="University"
+				value="<%=university.getName()%>" type="hidden">
+		</form>
+	</td>
+	<% } %>
+>>>>>>> branch 'master' of https://github.com/nullpm/cmcwebproject.git
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
