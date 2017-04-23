@@ -9,6 +9,42 @@
 	University university = uc.viewUniversity(request.getParameter("University"));
 	
 %>
+<!-- 
+<form method="post" action="edit_action.jsp" name="editAmdin">
+				<div class="form-group">
+					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="LastName">Last Name:</label> <input name="LastName" value="<%= u.getLastName() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Username">Username:</label> <input name="Username" value="<%= u.getUsername() %>" disabled
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Password">Password:</label> <input name="Password" value="<%= u.getPassword() %>"
+						class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="Type">Type:</label> <input name="Type" value="<%= u.getType() %>" disabled
+						class="form-control">
+				</div>
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<input value="Edit Admin" name="Edit Admin" type="submit"
+							class="btn btn-success">
+					</div>
+					<div class="btn-group">
+						<input value="Reset" name="Reset" type="reset"
+							class="btn btn-danger">
+					</div>
+				</div>
+			</form>
+ -->
+
+
 
 <div class="container">
 	<table class="table table-bordered table-striped">

@@ -8,7 +8,7 @@
 	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
 %>
 <div class="container">
-					
+
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
@@ -18,17 +18,37 @@
 				for (University u : uc.viewSearch()) {
 			%>
 			<tr>
+
+				<%
+					if (!uc.viewSavedSchools().contains(u)) {
+				%>
 				<td style="vertical-align: top;">
 					<form method="post" action="save_action.jsp" name="Save">
-						<input class="btn btn-success" name="Save" value="Save" type="submit"> <input
-							name="University" value="<%=u.getName()%>" type="hidden">
+						<input class="btn btn-success" name="Save" value="Save"
+							type="submit"> <input name="University"
+							value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>
+				<%
+					} else {
+				%>
+				<td style="vertical-align: top;">
+					<form method="post" action="remove_action.jsp" name="Remove">
+						<input class="btn btn-danger" name="Remove" value="Remove"
+							type="submit"> <input name="University"
+							value="<%=u.getName()%>" type="hidden">
+					</form>
+				</td>
+				<%
+					}
+				%>
+
 				<td style="vertical-align: top;"><%=u.getName()%></td>
 				<td style="vertical-align: top;">
 					<form method="post" action="view_school_user.jsp" name="View">
-						<input class="btn btn-primary" name="View" value="View" type="submit"> <input
-							name="University" value="<%=u.getName()%>" type="hidden">
+						<input class="btn btn-primary" name="View" value="View"
+							type="submit"> <input name="University"
+							value="<%=u.getName()%>" type="hidden">
 					</form>
 				</td>
 			</tr>
@@ -37,5 +57,5 @@
 			%>
 		</tbody>
 	</table>
-</body>
+	</body>
 </html>
