@@ -19,6 +19,7 @@ if(type == null || type != 1){
     <ul class="nav navbar-nav">
       <li><a href="manage_users.jsp">Manage Users</a></li>
       <li><a href="manage_schools.jsp">Manage Schools</a></li>
+      <li><a href="https://www.customink.com/designs/nullpm/hat0-00az-vnfq/share?pc=EMAIL-40778&utm_campaign=shared%20design&utm_source=share%20link&utm_medium=shared%20design&utm_content=shared%20desktop">eCommerce</a></li>
     </ul>
      <ul class="nav navbar-nav navbar-right">
       <li><a href="profile_admin.jsp"><span class="glyphicon glyphicon-user"></span> My Profile</a></li>
