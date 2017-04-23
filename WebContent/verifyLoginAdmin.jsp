@@ -14,10 +14,9 @@ if(type == null || type != 1){
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Choose My College</a>
+      <a class="navbar-brand" href="manage_schools.jsp">Choose My College</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
       <li><a href="manage_users.jsp">Manage Users</a></li>
       <li><a href="manage_schools.jsp">Manage Schools</a></li>
     </ul>
