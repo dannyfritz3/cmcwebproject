@@ -26,7 +26,7 @@
 
 
 <div class="container">
-	<form method="post" action="edit_action.jsp" name="editAmdin">
+	<form method="post" action="edit_university_action.jsp" name="editAdmin">
 		<table class="table table-bordered table-striped">
 			<tbody>
 				<tr>
@@ -40,71 +40,147 @@
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">State</td>
-					<td style="vertical-align: top;"><%=university.getState()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getState()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Location</td>
-					<td style="vertical-align: top;"><%=university.getLocation()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getLocation()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Control</td>
-					<td style="vertical-align: top;"><%=university.getControl()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getControl()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Number of Students</td>
-					<td style="vertical-align: top;"><%=university.getNumberOfStudents()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getNumberOfStudents()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Percent Female</td>
-					<td style="vertical-align: top;"><%=university.getPercentFemale()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getPercentFemale()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">SAT Verbal</td>
-					<td style="vertical-align: top;"><%=university.getSATVerbal()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getSATVerbal()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">SAT Math</td>
-					<td style="vertical-align: top;"><%=university.getSATMath()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getSATMath()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Expenses</td>
-					<td style="vertical-align: top;"><%=university.getExpenses()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getExpenses()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Percent Financial Aid</td>
-					<td style="vertical-align: top;"><%=university.getPercentFinancialAid()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getPercentFinancialAid()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Number of Applicants</td>
-					<td style="vertical-align: top;"><%=university.getNumberOfApplicants()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getNumberOfApplicants()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Percent Admitted</td>
-					<td style="vertical-align: top;"><%=university.getPercentAdmitted()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getPercentAdmitted()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Percent Enrolled</td>
-					<td style="vertical-align: top;"><%=university.getPercentEnrolled()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getPercentEnrolled()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Academic Scale (1-5)</td>
-					<td style="vertical-align: top;"><%=university.getAcademicScale()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getAcademicScale()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Social Scale (1-5)</td>
-					<td style="vertical-align: top;"><%=university.getSocialScale()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getSocialScale()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Quality of Life Scale (1-5)</td>
-					<td style="vertical-align: top;"><%=university.getQualityOfLifeScale()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getQualityOfLifeScale()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
 				<tr>
 					<td style="vertical-align: top;">Emphases</td>
-					<td style="vertical-align: top;"><%=university.getEmphasis()%></td>
+					<div class="form-group">
+					<td style="vertical-align: top;">
+					 <input name="FirstName" value="<%=university.getEmphasis()%>"
+						class="form-control"></td>
+				</div>
 				</tr>
-			</tbody>
+				</tbody>
 		</table>
-	<form method="post" action="edit_action.jsp" name="editAmdin">
+				<div class="btn-group btn-group-justified">
+					<div class="btn-group">
+						<input value="Edit" name="Edit" type="submit"
+							class="btn btn-success">
+					</div>
+					<div class="btn-group">
+						<input value="Reset" name="Reset" type="reset"
+							class="btn btn-danger">
+					</div>
+				</div>
+				
+			
+	</form>
 </div>
 </body>
 </html>
