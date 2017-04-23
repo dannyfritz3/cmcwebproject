@@ -21,7 +21,7 @@
 				<td style="vertical-align: top;">
 					<form method="post" action="search_history_action.jsp" name="Search">
 						<input class="btn btn-success" name="Search" value="Search" type="submit"> <input
-							name="University" value="<%=i%>" type="hidden">
+							name="searchID" value="<%=i%>" type="hidden">
 					</form>
 				</td>
 				<% if(!uc.viewSearches().get(i).getParameters().get(0).equals(null)){ %>

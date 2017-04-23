@@ -20,6 +20,7 @@ if(type == null || type != 2){
     <ul class="nav navbar-nav">
       <li><a href="search.jsp">Search</a></li>
       <li><a href="saved_schools.jsp">My Saved Schools</a></li>
+      <li><a href="search_history.jsp">Search History</a></li>
       <li><a href="https://www.customink.com/designs/nullpm/hat0-00az-vnfq/share?pc=EMAIL-40778&utm_campaign=shared%20design&utm_source=share%20link&utm_medium=shared%20design&utm_content=shared%20desktop">eCommerce</a></li>
     </ul>
      <ul class="nav navbar-nav navbar-right">
