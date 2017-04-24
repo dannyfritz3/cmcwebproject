@@ -12,7 +12,7 @@
 	if(uc.getAccount().getType() == 'a'){
 		session.setAttribute("loggedIn",uc);
 		session.setAttribute("type",1);
-		response.sendRedirect("manage_users.jsp");
+		response.sendRedirect("home_admin.jsp");
 		
 	} else if(uc.getAccount().getType() == 'u'){
 		uc.logout();
@@ -20,7 +20,7 @@
 		uc2.login(request.getParameter("Username"),request.getParameter("Password"));
 		session.setAttribute("loggedIn",uc2);
 		session.setAttribute("type",2);
-		response.sendRedirect("search.jsp");
+		response.sendRedirect("home_user.jsp");
 	} else {
 		response.sendRedirect("index.jsp?Error=2");
 		return;	

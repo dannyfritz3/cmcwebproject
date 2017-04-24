@@ -3,8 +3,10 @@
 <html>
 <head>
 <title></title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <%@include file="verifyLoginUser.jsp"%>
 <%
 	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
@@ -39,7 +41,13 @@
 	<%
 		}
 	%>
-
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		var searcher = new google.search.ImageSearch();
+		searcher.execute(<%university.getName();%>);
+		var node = result.html();
+	</script>
+	<img src=node class="img-responsive" alt="Responsive image">
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
@@ -106,10 +114,11 @@
 				<td style="vertical-align: top;">Quality of Life Scale (1-5)</td>
 				<td style="vertical-align: top;"><%=university.getQualityOfLifeScale()%></td>
 			</tr>
-			<tr>	<div class="container">
-	
-				<td style="vertical-align: top;">Emphases</td>
-				<td style="vertical-align: top;"><%=university.getEmphasis()%></td>
+			<tr>
+				<div class="container">
+
+					<td style="vertical-align: top;">Emphases</td>
+					<td style="vertical-align: top;"><%=university.getEmphasis()%></td>
 			</tr>
 		</tbody>
 	</table>
@@ -120,24 +129,25 @@
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
-			<td>
-				<form method="post" action="save_action.jsp" name="Save">
-					<input class="btn btn-success btn-block" name="Save" value="Save"
-						type="submit"> <input name="University"
-						value="<%=uni.getName()%>" type="hidden">
-				</form></td>
-								
+				<td>
+					<form method="post" action="save_action.jsp" name="Save">
+						<input class="btn btn-success btn-block" name="Save" value="Save"
+							type="submit"> <input name="University"
+							value="<%=uni.getName()%>" type="hidden">
+					</form>
+				</td>
+
 				<td style="vertical-align: top;">
 					<form method="post" action="view_school_admin.jsp" name="View">
 						<input class="btn btn-primary btn-block" name="View" value="View"
 							type="submit"> <input name="University"
 							value="<%=uni.getName()%>" type="hidden">
 					</form>
-				</td>	
-				
-				
-				</tr>
-				<tr>
+				</td>
+
+
+			</tr>
+			<tr>
 				<td style="vertical-align: top;">School</td>
 				<td style="vertical-align: top;"><%=uni.getName()%></td>
 			</tr>
@@ -205,13 +215,13 @@
 				<td style="vertical-align: top;">Emphases</td>
 				<td style="vertical-align: top;"><%=uni.getEmphasis()%></td>
 			</tr>
-			</tbody>
-			</table>
+		</tbody>
+	</table>
 
-			<%
+	<%
 				}
 			%>
-		
+
 </div>
 </body>
 </html>
