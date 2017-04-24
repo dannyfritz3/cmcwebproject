@@ -3,20 +3,26 @@
 <%
 	UserInterface ui = (UserInterface)session.getAttribute("loggedIn");
 	ArrayList<String> emphasis = new ArrayList<String>();
-	if(request.getParameter("Emp1") != null && !request.getParameter("Emp1").equals("")){
-		emphasis.add(request.getParameter("Emp1"));
+	String e1 = request.getParameter("Emph1");
+	String e2 = request.getParameter("Emph2");
+	String e3 = request.getParameter("Emph3");
+	String e4 = request.getParameter("Emph4");
+	String e5 = request.getParameter("Emph5");
+	System.out.println(e1 + e2 + e3 + e4 + e5);
+	if(!e1.equals("")){
+		emphasis.add(e1.toUpperCase());
 	}
-	if(request.getParameter("Emp2") != null && !request.getParameter("Emp2").equals("")){
-		emphasis.add(request.getParameter("Emp2"));
+	if(!e2.equals("")){
+		emphasis.add(e2.toUpperCase());
 	}
-	if(request.getParameter("Emp3") != null && !request.getParameter("Emp3").equals("")){
-		emphasis.add(request.getParameter("Emp3"));
+	if(!e3.equals("")){
+		emphasis.add(e3.toUpperCase());
 	}
-	if(request.getParameter("Emp4") != null && !request.getParameter("Emp4").equals("")){
-		emphasis.add(request.getParameter("Emp4"));
+	if(!e4.equals("")){
+		emphasis.add(e4.toUpperCase());
 	}
-	if(request.getParameter("Emp5") != null && !request.getParameter("Emp5").equals("")){
-		emphasis.add(request.getParameter("Emp5"));
+	if(!e5.equals("")){
+		emphasis.add(e5.toUpperCase());
 	}
 	String name = null;
 	if(!request.getParameter("SchoolName").equals("")){

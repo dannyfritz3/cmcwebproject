@@ -24,11 +24,13 @@
 							name="searchID" value="<%=i%>" type="hidden">
 					</form>
 				</td>
-				<% if(!uc.viewSearches().get(i).getParameters().get(0).equals(null)){ %>
-				<td style="vertical-align: top;">School Name: <%out.print(uc.viewSearches().get(i).getParameters().get(0));%></td>
-				<% } %>
-			
+				
+				<td style="vertical-align: top;"> <%out.print(uc.viewSearches().get(i).getParameters()); %></td>
+				
+			</tr>
 			<% } %>
-
+		</tbody>
+	</table>
+</div>
 </body>
 </html>
