@@ -9,7 +9,7 @@
 %>
 
 <div>
-					<a class="btn btn-success btn-block" href="add_action.jsp"> <span class="glyphicon glyphicon-plus"></span> Add New University</a>
+					<a class="btn btn-success btn-block" href="add_university.jsp"> <span class="glyphicon glyphicon-plus"></span> Add New University</a>
 	<table class="table table-bordered table-striped">
 		<tbody>
 
@@ -71,7 +71,7 @@
 				</td>
 				<td style="vertical-align: top;">
 					<form method="post" action="view_school_admin.jsp" name="view">
-						<input class="btn btn-primary" name="view" value="view" type="submit">
+						<input class="btn btn-primary" name="view" value="Edit" type="submit">
 						 <input	name="University" value="<%=uni.getName()%>" type="hidden">
 					</form>
 				</td>

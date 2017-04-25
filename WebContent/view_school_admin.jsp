@@ -33,7 +33,7 @@
 					<td style="vertical-align: top;">School</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getName()%>"
+					 <input name="Name" value="<%=university.getName()%>"
 						class="form-control"></td>
 				</div>
 					
@@ -42,7 +42,7 @@
 					<td style="vertical-align: top;">State</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getState()%>"
+					 <input name="State" value="<%=university.getState()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -50,7 +50,7 @@
 					<td style="vertical-align: top;">Location</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getLocation()%>"
+					 <input name="Location" value="<%=university.getLocation()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -58,7 +58,7 @@
 					<td style="vertical-align: top;">Control</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getControl()%>"
+					 <input name="Control" value="<%=university.getControl()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -66,7 +66,7 @@
 					<td style="vertical-align: top;">Number of Students</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getNumberOfStudents()%>"
+					 <input name="Students" value="<%=university.getNumberOfStudents()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -74,7 +74,7 @@
 					<td style="vertical-align: top;">Percent Female</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getPercentFemale()%>"
+					 <input name="Female" value="<%=university.getPercentFemale()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -82,7 +82,7 @@
 					<td style="vertical-align: top;">SAT Verbal</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getSATVerbal()%>"
+					 <input name="Verbal" value="<%=university.getSATVerbal()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -90,7 +90,7 @@
 					<td style="vertical-align: top;">SAT Math</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getSATMath()%>"
+					 <input name="Math" value="<%=university.getSATMath()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -98,7 +98,7 @@
 					<td style="vertical-align: top;">Expenses</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getExpenses()%>"
+					 <input name="Expenses" value="<%=university.getExpenses()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -106,7 +106,7 @@
 					<td style="vertical-align: top;">Percent Financial Aid</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getPercentFinancialAid()%>"
+					 <input name="FinancialAid" value="<%=university.getPercentFinancialAid()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -114,7 +114,7 @@
 					<td style="vertical-align: top;">Number of Applicants</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getNumberOfApplicants()%>"
+					 <input name="Applicants" value="<%=university.getNumberOfApplicants()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -122,7 +122,7 @@
 					<td style="vertical-align: top;">Percent Admitted</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getPercentAdmitted()%>"
+					 <input name="Admitted" value="<%=university.getPercentAdmitted()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -130,7 +130,7 @@
 					<td style="vertical-align: top;">Percent Enrolled</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getPercentEnrolled()%>"
+					 <input name="Enrolled" value="<%=university.getPercentEnrolled()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -138,7 +138,7 @@
 					<td style="vertical-align: top;">Academic Scale (1-5)</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getAcademicScale()%>"
+					 <input name="Academic" value="<%=university.getAcademicScale()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -146,7 +146,7 @@
 					<td style="vertical-align: top;">Social Scale (1-5)</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getSocialScale()%>"
+					 <input name="Social" value="<%=university.getSocialScale()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -154,7 +154,7 @@
 					<td style="vertical-align: top;">Quality of Life Scale (1-5)</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getQualityOfLifeScale()%>"
+					 <input name="Quality" value="<%=university.getQualityOfLifeScale()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
@@ -162,7 +162,7 @@
 					<td style="vertical-align: top;">Emphases</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="FirstName" value="<%=university.getEmphasis()%>"
+					 <input name="Emphases" value="<%=university.getEmphasis()%>"
 						class="form-control"></td>
 				</div>
 				</tr>
