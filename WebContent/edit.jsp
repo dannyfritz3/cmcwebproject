@@ -32,15 +32,13 @@
 				</div>
 				<div class="form-group">
 					<label for="Type">Type:</label> <select name="Type" class="form-control" value="<%= u.getType() %>">
-						<option value=null></option>
-						<option value="a">a</option>
-						<option value="u">u</option></select>
+						<option <%if(u.getType() == 'a') out.print("selected=\"selected\""); %>value="a">Admin</option>
+						<option <%if(u.getType() == 'u') out.print("selected=\"selected\""); %>	value="u">User</option></select>
 				</div>
 				<div class="form-group">
-					<label for="Status">Type:</label> <select name="Status" class="form-control">
-						<option value=null></option>
-						<option value="Y">Y</option>
-						<option value="N">N</option></select>
+					<label for="Status">Status:</label> <select name="Status" class="form-control">
+						<option <%if(u.getStatus() == 'Y') out.print("selected=\"selected\""); %>value="Y">Activated</option>
+						<option <%if(u.getStatus() == 'N') out.print("selected=\"selected\""); %>value="N">Deactivated</option></select>
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">

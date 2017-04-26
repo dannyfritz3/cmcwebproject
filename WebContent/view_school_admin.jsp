@@ -50,8 +50,14 @@
 					<td style="vertical-align: top;">Location</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="Location" value="<%=university.getLocation()%>"
-						class="form-control"></td>
+					
+					<select name="Location"	class="form-control">
+							<option></option>
+							<option <%if(university.getLocation() == "Urban") out.print("selected=\"selected\""); %>value="Urban">Urban</option>
+							<option <%if(university.getLocation() == "Suburban") out.print("selected=\"selected\""); %>value="Suburban">Suburban</option>
+							<option <%if(university.getLocation() == "Rural") out.print("selected=\"selected\""); %>value="Rural">Rural</option>
+						</select>
+
 				</div>
 				</tr>
 				<tr>

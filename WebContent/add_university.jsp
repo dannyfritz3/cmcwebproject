@@ -21,17 +21,18 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Location">Location:</label> <select name="Username"
+					<label for="Location">Location:</label> <select name="Location"
 						class="form-control">
+							<option></option>
 							<option value="Urban">Urban</option>
 							<option value="Suburban">Suburban</option>
 							<option value="Rural">Rural</option>
 						</select>
 				</div>
 				<div class="form-group">
-					<label for="Control">Control:</label> <select name="Username"
+					<label for="Control">Control:</label> <select name="Control"
 						class="form-control">
-							<option value=null></option>
+							<option></option>
 							<option value="Public">Public</option>
 							<option value="Private">Private</option>
 						</select>
