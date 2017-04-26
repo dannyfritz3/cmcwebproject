@@ -122,7 +122,9 @@
 			</tr>
 		</tbody>
 	</table>
+	<br><br>
 	<h2>Here are some similar schools to look at:</h2>
+	<br>
 	<% ArrayList<University> savedSchools = uc.viewSchoolWRec(university);
 				for(University uni : savedSchools) {
 			%>

@@ -14,11 +14,14 @@
 			<tr>
 				<th colspan="3" class="text-center" style="vertical-align: top;">School</th>
 			</tr>
+
 			<%
-				for (University u : uc.viewSearch()) {
+			System.out.print(uc.viewSearch().size());	
+			System.out.print("Q");
+			for (University u : uc.viewSearch()) {
 			%>
 			<tr>
-
+				
 				<%
 					if (!uc.viewSavedSchools().contains(u)) {
 				%>
@@ -55,7 +58,11 @@
 			<%
 				}
 			%>
+			<tr>
+				<th colspan="3" class="text-center" style="vertical-align: top;">End of Results</th>
+			</tr>
 		</tbody>
 	</table>
+	
 	</body>
 </html>

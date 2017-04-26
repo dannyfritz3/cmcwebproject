@@ -31,12 +31,16 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Type">Type:</label> <input name="Type" value="<%= u.getType() %>"
-						class="form-control">
+					<label for="Type">Type:</label> <select name="Type" class="form-control" value="<%= u.getType() %>">
+						<option value=null></option>
+						<option value="a">a</option>
+						<option value="u">u</option></select>
 				</div>
 				<div class="form-group">
-					<label for="Status">Status:</label> <input name="Status" value="<%= u.getStatus() %>"
-						class="form-control">
+					<label for="Status">Type:</label> <select name="Status" class="form-control">
+						<option value=null></option>
+						<option value="Y">Y</option>
+						<option value="N">N</option></select>
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">

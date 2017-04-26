@@ -16,5 +16,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/cmcproject"/>
+	<classpathentry kind="lib" path="/Servers/Tomcat v8.0 Server at localhost-config"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
