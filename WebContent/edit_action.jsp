@@ -31,7 +31,7 @@ char status2 = 'x';
 if(status.equals("")){
 	response.sendRedirect("edit.jsp?Error=6");
 } else {
-	status2 = t.charAt(0);
+	status2 = status.charAt(0);
 }
 Account u = new Account(username, fName, lName, password, t2, status2);
 System.out.println(uc.viewUser("admin").getFirstName());
