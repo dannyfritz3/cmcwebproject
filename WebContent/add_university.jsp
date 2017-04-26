@@ -23,67 +23,68 @@
 				<div class="form-group">
 					<label for="Location">Location:</label> <select name="Location"
 						class="form-control">
-							<option></option>
-							<option value="Urban">Urban</option>
-							<option value="Suburban">Suburban</option>
-							<option value="Rural">Rural</option>
+							<option value="-1"></option>
+							<option value="URBAN">Urban</option>
+							<option value="SUBURBAN">Suburban</option>
+							<option value="SMALL-CITY">Small-City</option>
 						</select>
 				</div>
 				<div class="form-group">
 					<label for="Control">Control:</label> <select name="Control"
 						class="form-control">
-							<option></option>
-							<option value="Public">Public</option>
-							<option value="Private">Private</option>
+							<option value="-1"></option>
+							<option value="STATE">State</option>
+							<option value="PRIVATE">Private</option>
+							<option value="CITY">City</option>
 						</select>
 				</div>
 				<div class="form-group">
 					<label for="Students">Number Of Students:</label> <input name="Students"
-						class="form-control" type="number" min="0">
+						class="form-control" type="number" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="Female">Percent Female:</label> <input name="Female"
-							class="form-control" type="number" min="0" max="100">
+							class="form-control" type="number" min="-1" max="100">
 				</div>
 				<div class="form-group">
 						<label for="Verbal">SAT Verbal:</label> <input name="Verbal"
-							class="form-control" type="number" min="200" max="800">
+							class="form-control" type="number" min="-1" max="800">
 				</div>
 				<div class="form-group">
 						<label for="Math">SAT Math:</label> <input name="Math"
-							class="form-control" type="number" min="200" max="800">
+							class="form-control" type="number" min="-1" max="800">
 				</div>
 				<div class="form-group">
 					<label for="Expenses">Expenses:</label> <input name="Expenses"
-						class="form-control" type="number" min="0">
+						class="form-control" type="number" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="FinancialAid">Percent Financial Aid:</label> <input name="FinancialAid"
-							class="form-control" type="number" min="0" max="100">
+							class="form-control" type="number" min="-1" max="100">
 				</div>
 				<div class="form-group">
 						<label for="Applicants">Number of Applicants:</label> <input name="Applicants"
-							class="form-control" type="number" min="0">
+							class="form-control" type="number" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="Admitted">Percent Admitted:</label> <input name="Admitted"
-							class="form-control" type="number" min="0">
+							class="form-control" type="number" min="-1">
 				</div>
 				<div class="form-group">
 					<label for="Enrolled">Percent Enrolled:</label> <input name="Enrolled"
-						class="form-control" type="number" min="0">
+						class="form-control" type="number" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="Academic">Academic Scale(1-5):</label> <input name="Academic"
-							class="form-control" type="number" max="5" min="1">
+							class="form-control" type="number" max="5" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="Social">Social Scale(1-5)::</label> <input name="Social"
-							class="form-control" type="number" max="5" min="1">
+							class="form-control" type="number" max="5" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="Quality">Quality of Life Scale(1-5):</label> <input name="Quality"
-							class="form-control" type="number" max="5" min="1">
+							class="form-control" type="number" max="5" min="-1">
 				</div>
 				<div class="form-group">
 						<label for="em1">Emphasis(es):</label> <input name="em1"
