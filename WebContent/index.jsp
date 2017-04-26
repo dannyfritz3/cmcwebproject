@@ -6,17 +6,7 @@
 	</head>
 	<body>
 		<br>
-<% 
-if(request.getParameter("Error") != null){
-	if(request.getParameter("Error").equals("-1")){
-		out.println("Username is invalid");
-	} else if(request.getParameter("Error").equals("-2")){
-		out.println("Password is invalid");
-	} else {
-		out.println("There was an error when accessing the database");
-	}
-}
-%>
+
 		<div class="container well">
 			<div class="row">
 				<div class="col-sm-4"></div>
@@ -26,11 +16,26 @@ if(request.getParameter("Error") != null){
 							<label for="Username">Username</label>
 							<input name="Username" class="form-control">
 						</div>
-						<div class="form-group">
-							<label for="Password">Password</label>
-							<input type="password" name="Password" class="form-control">
-						</div>
-						<div class="btn-group btn-group-justified">
+					<div class="form-group">
+						<label for="Password">Password</label> <input type="password"
+							name="Password" class="form-control">
+					</div>
+					<%
+						if (request.getParameter("Error") != null) {
+							%>
+							<div>
+							<%
+							if (request.getParameter("Error").equals("-4")) {
+								out.println("You do not have the permissions to access this page.");
+							} else {
+								out.println(request.getParameter("Error"));
+							}
+							%>
+							</div>
+							<%
+						}
+					%>
+					<div class="btn-group btn-group-justified">
 							<div class="btn-group">
 								<input value="Log in" name="Log in" type="submit" class="btn btn-default">
 							</div>
@@ -42,6 +47,7 @@ if(request.getParameter("Error") != null){
 				</div>
 				<div class="col-sm-4"></div>
 			</div>
+			
 		</div>
 
 	</body>

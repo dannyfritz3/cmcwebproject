@@ -6,7 +6,7 @@
 	AdminInterface uc = new AdminInterface();
 	try{boolean log = uc.login(request.getParameter("Username"),request.getParameter("Password"));}
 	catch(Exception e){
-		response.sendRedirect("index.jsp?Error=3");
+		response.sendRedirect("index.jsp?Error=" + e.getMessage());
 		return;
 	}
 	if(uc.getAccount().getType() == 'a'){
