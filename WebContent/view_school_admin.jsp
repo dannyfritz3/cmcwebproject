@@ -50,12 +50,10 @@
 					<td style="vertical-align: top;">Location</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					
 					<select name="Location"	class="form-control">
-							<option></option>
-							<option <%if(university.getLocation() == "Urban") out.print("selected=\"selected\""); %>value="Urban">Urban</option>
-							<option <%if(university.getLocation() == "Suburban") out.print("selected=\"selected\""); %>value="Suburban">Suburban</option>
-							<option <%if(university.getLocation() == "Rural") out.print("selected=\"selected\""); %>value="Rural">Rural</option>
+							<option <%if(university.getLocation().equals("URBAN")) out.print("selected=\"selected\""); %>value="URBAN">Urban</option>
+							<option <%if(university.getLocation().equals("SUBURBAN")) out.print("selected=\"selected\""); %>value="SUBURBAN">Suburban</option>
+							<option <%if(university.getLocation().equals("SMALL-CITY")) out.print("selected=\"selected\""); %>value="SMALL-CITY">Small-City</option>
 						</select>
 
 				</div>
@@ -64,8 +62,11 @@
 					<td style="vertical-align: top;">Control</td>
 					<div class="form-group">
 					<td style="vertical-align: top;">
-					 <input name="Control" value="<%=university.getControl()%>"
-						class="form-control"></td>
+					<select name="Control" class="form-control">
+							<option <%if(university.getControl().equals("STATE")) out.print("selected=\"selected\""); %>value="STATE">State</option>
+							<option <%if(university.getControl().equals("PRIVATE")) out.print("selected=\"selected\""); %>value="PRIVATE">Private</option>
+							<option <%if(university.getControl().equals("CITY")) out.print("selected=\"selected\""); %>value="CITY">City</option>
+						</select>
 				</div>
 				</tr>
 				<tr>
