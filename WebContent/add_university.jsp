@@ -31,7 +31,7 @@
 				<div class="form-group">
 					<label for="Control">Control:</label> <select name="Username"
 						class="form-control">
-							<option value=null
+							<option value=null></option>
 							<option value="Public">Public</option>
 							<option value="Private">Private</option>
 						</select>
