@@ -5,7 +5,7 @@
 
 Integer type = (Integer)session.getAttribute("type");
 if(type == null || type != 1 || ((AdminInterface)session.getAttribute("loggedIn")).viewUser(((AdminInterface)session.getAttribute("loggedIn")).getAccount().getUsername()).getType() != 'a'){
-	if(((AdminInterface)session.getAttribute("loggedIn")).viewUser(((AdminInterface)session.getAttribute("loggedIn")).getAccount().getUsername()).getStatus() != 'Y'){
+	if(type == 1 && ((AdminInterface)session.getAttribute("loggedIn")).viewUser(((AdminInterface)session.getAttribute("loggedIn")).getAccount().getUsername()).getStatus() != 'Y'){
 		response.sendRedirect("index.jsp?Error=-3");
 		return;
 	} else {
