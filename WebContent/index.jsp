@@ -27,6 +27,8 @@
 							<%
 							if (request.getParameter("Error").equals("-4")) {
 								out.println("You do not have the permissions to access this page.");
+							} else if(request.getParameter("Error").equals("-3")){
+								out.println("This account has been deactivated");
 							} else {
 								out.println(request.getParameter("Error"));
 							}
