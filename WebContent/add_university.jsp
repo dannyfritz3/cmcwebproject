@@ -12,6 +12,11 @@
 		<div class="col-sm-4"></div>
 		<div class="col-sm-4">
 			<form method="post" action="add_uni_action.jsp" name="addUniversity">
+				<%
+					if (request.getParameter("Error") != null && request.getParameter("Error").equals("-1")) {
+						%><div><label class="text-danger">This university already exists</label></div><%
+					}
+				%>
 				<div class="form-group">
 					<label for="Name">Name:</label> <input name="Name"
 						class="form-control">
@@ -97,7 +102,7 @@
 				<div class="form-group">
 						<label for="em3"></label> <input name="em3"
 							class="form-control">
-				</div>				
+				</div>		
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
 						<input value="Add University" name="Add User" type="submit"
