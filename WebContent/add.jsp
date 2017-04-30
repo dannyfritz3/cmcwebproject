@@ -41,6 +41,11 @@
 						<option value="Y">Activated</option>
 						<option value="N">Deactivated</option></select>
 				</div>
+				<%
+					if (request.getParameter("Error") != null && request.getParameter("Error").equals("-1")) {
+						%><div><label class="text-danger">This username already exists</label></div><%
+					}
+				%>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
 						<input value="Add User" name="Add User" type="submit"

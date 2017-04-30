@@ -6,6 +6,7 @@
 <%@include file="verifyLoginAdmin.jsp"%>
 <%
 	AdminInterface uc = (AdminInterface) session.getAttribute("loggedIn");
+
 %>
 
 <div class="container">
