@@ -2,6 +2,7 @@
 <%@include file="verifyLoginAdmin.jsp"%>
 <%
 	AdminInterface uc = (AdminInterface) session.getAttribute("loggedIn");
-	uc.deleteUniversity((University) session.getAttribute("university"));
-	response.sendRedirect("saved_schools.jsp");
+	System.out.println(request.getParameter("Name"));
+	uc.deleteUniversity(request.getParameter("Name"));
+	response.sendRedirect("manage_schools.jsp");
 %>
