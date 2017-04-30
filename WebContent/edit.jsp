@@ -15,11 +15,11 @@
 		<div class="col-sm-4">
 			<form method="post" action="edit_action.jsp" name="editUser">
 				<div class="form-group">
-					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>"
+					<label for="FirstName">First Name:</label> <input name="FirstName" value="<%= u.getFirstName() %>" required
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="LastName">Last Name:</label> <input name="LastName" value="<%= u.getLastName() %>"
+					<label for="LastName">Last Name:</label> <input name="LastName" value="<%= u.getLastName() %>" required
 						class="form-control">
 				</div>
 				<div class="form-group">
@@ -27,7 +27,7 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Password">Password:</label> <input name="Password" value="<%= u.getPassword() %>"
+					<label for="Password">Password:</label> <input name="Password" value="<%= u.getPassword() %>" required
 						class="form-control">
 				</div>
 				<div class="form-group">
