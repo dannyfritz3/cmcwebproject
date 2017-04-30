@@ -29,7 +29,7 @@
 					<label class="control-label col-sm-3"  for="Location">Location: </label>
 					<!--<label class="control-label col-sm-5"  for="Location">(Suburban, Urban, Small-City) </label>-->
 					<div class="col-sm-9"> 
-						<select name="Control" class="form-control">
+						<select name="Location" class="form-control">
 							<option value=""></option>
 							<option value="SUBURBAN">Suburban</option>
 							<option value="URBAN">Urban</option>

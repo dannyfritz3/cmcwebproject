@@ -1,6 +1,7 @@
 <%@page language="java" import="interfaces.*, baseclasses.*,java.util.*"%>
 <%@include file="verifyLoginUser.jsp" %>
 <%
+
 	UserInterface ui = (UserInterface)session.getAttribute("loggedIn");
 	ArrayList<String> emphasis = new ArrayList<String>();
 	String e1 = request.getParameter("Emph1");
@@ -33,11 +34,11 @@
 		state = request.getParameter("State").toUpperCase();
 	}
 	String location = null;
-	if(!request.getParameter("Location").equals("")){
+	if(request.getParameter("Location") != null && !request.getParameter("Location").equals("")){
 		location = request.getParameter("Location").toUpperCase();
 	}
 	String control = null;
-	if(!request.getParameter("Control").equals("")){
+	if(request.getParameter("Control") != null && !request.getParameter("Control").equals("")){
 		control = request.getParameter("Control").toUpperCase();
 	}
 	int numberOfStudents = -1;
