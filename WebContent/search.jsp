@@ -27,148 +27,158 @@
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="Location">Location: </label>
-					<label class="control-label col-sm-5"  for="Location">(Suburban, Urban, Small-City) </label>
-					<div class="col-sm-4"> 
-						<input name="Location" class="form-control">
+					<!--<label class="control-label col-sm-5"  for="Location">(Suburban, Urban, Small-City) </label>-->
+					<div class="col-sm-9"> 
+						<select name="Control" class="form-control">
+							<option value=""></option>
+							<option value="SUBURBAN">Suburban</option>
+							<option value="URBAN">Urban</option>
+							<option value="SMALL-CITY">Small-City</option>
+						</select>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="Control">Control: </label>
-					<label class="control-label col-sm-5"  for="Control">(Private, State, City) </label>
-					<div class="col-sm-4"> 
-						<input name="Control" class="form-control">
+					<!-- <label class="control-label col-sm-5"  for="Control">(State, Private, City) </label> -->
+					<div class="col-sm-9"> 
+						<select name="Control" class="form-control">
+							<option value=""></option>
+							<option value="STATE">State</option>
+							<option value="PRIVATE">Private</option>
+							<option value="CITY">City</option>
+						</select>
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="NumStudents">Number of Students: </label>
 					<label class="control-label col-sm-2"  for="NumStudents"> between </label>
 					<div class="col-sm-3"> 
-					<input name="NumStudents" class="form-control">
+					<input name="NumStudents" class="form-control" type="number" min="-1">
 					</div>
 					<label class="control-label col-sm-1"  for="NumStudents2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="NumStudents2" class="form-control">
+					<input name="NumStudents2" class="form-control" type="number" min="-1">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="PercentFemale">% Female: </label>
 					<label class="control-label col-sm-2"  for="PercentFemale"> between </label>
 					<div class="col-sm-3"> 
-					<input name="PercentFemale" class="form-control">
+					<input name="PercentFemale" class="form-control" type="number" min="-1" max="100">
 					</div>
 					<label class="control-label col-sm-1"  for="PercentFemale2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="PercentFemale2" class="form-control">
+					<input name="PercentFemale2" class="form-control" type="number" min="-1" max="100">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="SATVerbal">SAT Verbal: </label>
 					<label class="control-label col-sm-2"  for="SATVerbal"> between </label>
 					<div class="col-sm-3"> 
-					<input name="SATVerbal" class="form-control">
+					<input name="SATVerbal" class="form-control" type="number" min="-1" max="800">
 					</div>
 					<label class="control-label col-sm-1"  for="SATVerbal2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="SATVerbal2" class="form-control">
+					<input name="SATVerbal2" class="form-control" type="number" min="-1" max="800">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="SATMath">SAT Math: </label>
 					<label class="control-label col-sm-2"  for="SATMath"> between </label>
 					<div class="col-sm-3"> 
-					<input name="SATMath" class="form-control">
+					<input name="SATMath" class="form-control" type="number" min="-1" max="800">
 					</div>
 					<label class="control-label col-sm-1"  for="SATMath2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="SATMath2" class="form-control">
+					<input name="SATMath2" class="form-control" type="number" min="-1" max="800">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="Expenses">Expenses: </label>
 					<label class="control-label col-sm-2"  for="Expenses"> between </label>
 					<div class="col-sm-3"> 
-					<input name="Expenses" class="form-control">
+					<input name="Expenses" class="form-control" type="number" min="-1">
 					</div>
 					<label class="control-label col-sm-1"  for="Expenses2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="Expenses2" class="form-control">
+					<input name="Expenses2" class="form-control" type="number" min="-1">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="PercentFinancialAid">% Financial Aid: </label>
 					<label class="control-label col-sm-2"  for="PercentFinancialAid"> between </label>
 					<div class="col-sm-3"> 
-					<input name="PercentFinancialAid" class="form-control">
+					<input name="PercentFinancialAid" class="form-control" type="number" min="-1" max="100">
 					</div>
 					<label class="control-label col-sm-1"  for="PercentFinancialAid2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="PercentFinancialAid2" class="form-control">
+					<input name="PercentFinancialAid2" class="form-control" type="number" min="-1" max="100">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="NumberOfApplicants">Number Of Applicants: </label>
 					<label class="control-label col-sm-2"  for="NumberOfApplicants"> between </label>
 					<div class="col-sm-3"> 
-					<input name="NumberOfApplicants" class="form-control">
+					<input name="NumberOfApplicants" class="form-control" type="number" min="-1">
 					</div>
 					<label class="control-label col-sm-1"  for="NumberOfApplicants2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="NumberOfApplicants2" class="form-control">
+					<input name="NumberOfApplicants2" class="form-control" type="number" min="-1">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="PercentAdmitted">% Admitted: </label>
 					<label class="control-label col-sm-2"  for="PercentAdmitted"> between </label>
 					<div class="col-sm-3"> 
-					<input name="PercentAdmitted" class="form-control">
+					<input name="PercentAdmitted" class="form-control" type="number" min="-1" max="100">
 					</div>
 					<label class="control-label col-sm-1"  for="PercentAdmitted2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="PercentAdmitted2" class="form-control">
+					<input name="PercentAdmitted2" class="form-control" type="number" min="-1" max="100">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="PercentEnrolled">% Enrolled: </label>
 					<label class="control-label col-sm-2"  for="PercentEnrolled"> between </label>
 					<div class="col-sm-3"> 
-					<input name="PercentEnrolled" class="form-control">
+					<input name="PercentEnrolled" class="form-control" type="number" min="-1" max="100">
 					</div>
 					<label class="control-label col-sm-1"  for="PercentEnrolled2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="PercentEnrolled2" class="form-control">
+					<input name="PercentEnrolled2" class="form-control" type="number" min="-1" max="100">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="AcademicScale">Academic Scale<br>(1- 5): </label>
 					<label class="control-label col-sm-2"  for="AcademicScale"> between </label>
 					<div class="col-sm-3"> 
-					<input name="AcademicScale" class="form-control">
+					<input name="AcademicScale" class="form-control"  type="number" min="-1" max="5">
 					</div>
 					<label class="control-label col-sm-1"  for="AcademicScale2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="AcademicScale2" class="form-control">
+					<input name="AcademicScale2" class="form-control"  type="number" min="-1" max="5">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="SocialScale">Social Scale<br>(1- 5): </label>
 					<label class="control-label col-sm-2"  for="SocialScale"> between </label>
 					<div class="col-sm-3"> 
-					<input name="SocialScale" class="form-control">
+					<input name="SocialScale" class="form-control"  type="number" min="-1" max="5">
 					</div>
 					<label class="control-label col-sm-1"  for="SocialScale2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="SocialScale2" class="form-control">
+					<input name="SocialScale2" class="form-control"  type="number" min="-1" max="5">
 					</div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-3"  for="QualityOfLifeScale">Quality Of Life Scale <br>(1- 5): </label>
 					<label class="control-label col-sm-2"  for="QualityOfLifeScale"> between </label>
 					<div class="col-sm-3"> 
-					<input name="QualityOfLifeScale" class="form-control">
+					<input name="QualityOfLifeScale" class="form-control"  type="number" min="-1" max="5">
 					</div>
 					<label class="control-label col-sm-1"  for="QualityOfLifeScale2"> and </label>
 					<div class="col-sm-3"> 
-					<input name="QualityOfLifeScale2" class="form-control">
+					<input name="QualityOfLifeScale2" class="form-control"  type="number" min="-1" max="5">
 					</div>
 				</div>
 				<div class="form-group">
