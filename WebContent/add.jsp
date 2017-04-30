@@ -29,12 +29,17 @@
 						class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="Type">Type:</label> <input name="Type"
+					<label for="Type">Type:</label> <select name="Type"
 						class="form-control">
+						<option value="a">Admin</option>
+						<option value="u">User</option></select>
+						
 				</div>
 				<div class="form-group">
-					<label for="Status">Status:</label> <input name="Status"
+					<label for="Status">Status:</label> <select name="Status"
 						class="form-control">
+						<option value="Y">Activated</option>
+						<option value="N">Deactivated</option></select>
 				</div>
 				<div class="btn-group btn-group-justified">
 					<div class="btn-group">
