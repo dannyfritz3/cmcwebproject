@@ -2,11 +2,8 @@
 
 <html>
 <head>
-<title></title>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>View School</title>
+
 <%@include file="verifyLoginUser.jsp"%>
 <%
 	UserInterface uc = (UserInterface) session.getAttribute("loggedIn");
@@ -41,18 +38,11 @@
 	<%
 		}
 	%>
-	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-	<script type="text/javascript">
-		var searcher = new google.search.ImageSearch();
-		searcher.execute(<%university.getName();%>);
-		var node = result.html();
-	</script>
-	<img src=node class="img-responsive" alt="Responsive image">
 	<table class="table table-bordered table-striped">
 		<tbody>
 			<tr>
 				<td style="vertical-align: top;">School</td>
-				<td style="vertical-align: top;"><%=university.getName()%></td>
+				<td style="vertical-align: top;"><a href="http://www.google.com/search?q=<%= university.getName().replace(' ', '+') %>+edu&btnI"><%=university.getName()%></a></td>
 			</tr>
 			<tr>
 				<td style="vertical-align: top;">State</td>
