@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<br>
+<h1 class="text-center">Choose My College</h1></div>
 
 		<div class="container well">
 			<div class="row">

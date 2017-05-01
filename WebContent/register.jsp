@@ -3,10 +3,12 @@
 
 		<title>Register Form</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+
 	</head>
 	<body>
 		<br>
-
+<a class="unlink" href="index.jsp"><h1 class="text-center">Choose My College</h1></a>
+<h2 class="text-center">Register</h2>
 		<div class="container well">
 			<div class="row">
 				<div class="col-sm-4"></div>
