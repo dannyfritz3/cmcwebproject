@@ -46,6 +46,7 @@
 							</div>						
 						</div>
 					</form>
+					<a href="register.jsp" class="btn btn-block btn-info">Register</a>
 				</div>
 				<div class="col-sm-4"></div>
 			</div>
